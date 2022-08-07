@@ -1,4 +1,4 @@
-## ascii-art-output
+## ascii-art
 
 ### Objectives
 
@@ -23,8 +23,7 @@ EX: go run . something standard --output=<fileName.txt>
 ### Usage
 
 ```console
-$ go run . "hello" standard --output=banner.txt
-$ cat -e banner.txt
+$ go run . "hello" | cat -e
  _              _   _          $
 | |            | | | |         $
 | |__     ___  | | | |   ___   $
@@ -33,6 +32,16 @@ $ cat -e banner.txt
 |_| |_|  \___| |_| |_|  \___/  $
                                $
                                $
+$
+$ go run . "Hello There!" shadow | cat -e
+                                                                                         $
+_|    _|          _| _|                _|_|_|_|_| _|                                  _| $
+_|    _|   _|_|   _| _|   _|_|             _|     _|_|_|     _|_|   _|  _|_|   _|_|   _| $
+_|_|_|_| _|_|_|_| _| _| _|    _|           _|     _|    _| _|_|_|_| _|_|     _|_|_|_| _| $
+_|    _| _|       _| _| _|    _|           _|     _|    _| _|       _|       _|          $
+_|    _|   _|_|_| _| _|   _|_|             _|     _|    _|   _|_|_| _|         _|_|_| _| $
+                                                                                         $
+                                                                                         $
 $
 $ go run . "Hello There!" shadow --output=banner.txt
 $ cat -e banner.txt
